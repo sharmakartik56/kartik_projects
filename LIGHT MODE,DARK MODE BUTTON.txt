@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGGLE BUTTON TO TURN DARK MODE INTO LIGHT MODE AND LIGHT MODE INTO DARK MODE </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="btn">
+        click me!
+    </button>
+    <script src="k.js"></script>
+</body>
+</html>
+#js file
+let btn1=document.querySelector('.btn');
+let mode='light';
+btn1.addEventListener('click',() => {
+    if(mode==='light'){
+        mode='dark'
+        document.body.style.background='black'
+    }
+    else{
+        mode='light';
+        document.body.style.background='white';
+    }
+    console.log(mode)
+})
+
